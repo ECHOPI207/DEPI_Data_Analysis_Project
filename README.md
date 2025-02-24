@@ -3,7 +3,7 @@
 # Human Resources Dataset Analysis Project
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ce724b50-7c5f-4248-b13c-32769d0fbad4" alt="Image">
+  <img src="https://github.com/user-attachments/assets/af28c623-f335-4318-92e8-624faba0067a" alt="Image">
 </p>
 
 **Prepared by:**
