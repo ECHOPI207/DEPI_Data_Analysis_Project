@@ -125,9 +125,9 @@ This data analysis project explores employee performance and satisfaction levels
 ---
 
 ### 6. Research Questions
-- What factors contribute to higher employee performance ratings?
-- How does job satisfaction correlate with attrition rates?
-- What is the impact of education level on performance ratings?
+- What factors contribute to employee attrition?
+- How does salary vary across departments?
+- How does business travel impact attrition?
 - How do training opportunities influence job satisfaction and performance?
 - What trends exist in employee work-life balance and their effect on retention?
 - Which departments have the highest and lowest satisfaction levels?
