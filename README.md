@@ -1,4 +1,7 @@
-# Human Resources Dataset Analysis Project (DEPI)
+<div align="center">
+  <img src="reports/figures/project_logo.png" alt="Project Logo" width="300">
+  <h1>Human Resources Dataset Analysis Project (DEPI)</h1>
+</div>
 
 This project explores employee performance, satisfaction levels, and their correlation with factors such as education, work-life balance, and training. By leveraging data analytics, we aim to derive actionable insights to improve workforce management.
 
@@ -41,7 +44,17 @@ How education background influences compensation across different roles.
 
 The interactive Power BI dashboard provides a high-level overview of workforce metrics.
 
-![HR Analytics Dashboard](reports/figures/dashboard_screenshot.png)
+### 1. Overview
+A snapshot of overall company attrition and workforce statistics.
+![Dashboard Overview](reports/figures/dashboard_overview.jpg)
+
+### 2. Salary & Attrition
+Analyzing how compensation and benefits affect employee turnover.
+![Salary & Attrition](reports/figures/dashboard_salary.jpg)
+
+### 3. Tenure & Promotion
+Insights into time at company, growth, and career path impact.
+![Tenure & Promotion](reports/figures/dashboard_tenure.jpg)
 
 ## 📂 Project Structure
 
