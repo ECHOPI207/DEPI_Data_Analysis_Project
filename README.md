@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="reports/figures/project_logo.png" alt="Project Logo" width="300">
+  <img src="reports/figures/logo_final.jpg" alt="Project Logo" width="800">
   <h1>Human Resources Dataset Analysis Project (DEPI)</h1>
 </div>
 
