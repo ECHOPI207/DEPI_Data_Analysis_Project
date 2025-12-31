@@ -9,6 +9,28 @@ This project explores employee performance, satisfaction levels, and their corre
 - **Mohamed Mostafa Mohamed**
 - **Yousef Mohamed Hussein**
 
+## 📊 Key Insights & Visualizations
+
+Here are some of the key findings from our exploratory data analysis:
+
+### 1. Salary Impact on Attrition
+Analysis shows a significant difference in salary distribution between employees who left and those who stayed.
+![Salary vs Attrition](00.%20Deliverables/03.%20Week%2003%20-%20EDA/0311.%20Salary_vs_Attrition.png)
+
+### 2. Age Distribution & Attrition
+Understanding which age groups are most likely to leave the company helps in targeted retention strategies.
+![Age Distribution](00.%20Deliverables/03.%20Week%2003%20-%20EDA/033.%20Age_Distribution_by_Attrition.png)
+
+### 3. Business Travel Effect
+Does frequent travel lead to higher attrition? The data reveals interesting trends.
+![Business Travel](00.%20Deliverables/03.%20Week%2003%20-%20EDA/034.%20BusinessTravel_vs_Retention.png)
+
+### 4. Education Field vs. Salary
+How education background influences compensation across different roles.
+![Education Field vs Salary](00.%20Deliverables/03.%20Week%2003%20-%20EDA/037.%20EducationField_vs_Salary.png)
+
+---
+
 ## 🎯 Objectives
 1.  **Analyze Performance:** Investigate employee performance ratings and influencing factors.
 2.  **Identify Trends:** Uncover patterns in job satisfaction and employee attrition.
