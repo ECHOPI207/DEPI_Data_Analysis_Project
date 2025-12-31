@@ -1,0 +1,19 @@
+# Auto-detect text files and perform LF normalization
+* text=auto
+
+# Custom binding for Jupyter Notebooks
+*.ipynb filter=clean_ipynb
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.pbix binary
+*.xlsx binary
+*.docx binary
+
+# Python
+*.py diff=python

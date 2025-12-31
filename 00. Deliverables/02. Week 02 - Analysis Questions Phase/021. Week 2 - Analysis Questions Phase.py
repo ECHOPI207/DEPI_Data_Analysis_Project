@@ -6,18 +6,18 @@ These questions should focus on exploring relationships between different variab
 (e.g., How do age and salary relate to job satisfaction?).
 
 Step 1: Exploring Relationships: We will explore possible relationships between numerical and categorical variables.
-محتاج افهم العلاقات الممكنة بين المتغيرات الرقمية والفئوية زي العلاقة بين السن والمرتبات
-هل فيه ارتباط بين عدد السنين في الشركة والاستقالة
-هل في علاقة بين الوظيفة او الجنس والمرتب
+- Understand potential relationships between numerical and categorical variables (e.g., Age vs. Salary).
+- Check for correlation between YearsAtCompany and Attrition.
+- Analyze if JobRole or Gender affects Salary.
 
-الأسئلة التانية ممكن تركز على إزاي العوامل المحددة زي الحالة الاجتماعية، العمل الإضافي، أو التعليم بيأثروا على المقاييس الرئيسية زي الاستقالة أو الوظيفة.
+Other questions may focus on specific factors like MaritalStatus, OverTime, or Education and their impact on key metrics like Attrition or JobSatisfaction.
 
 Step 2: Data Exploration and Initial Analysis:
-هنحسب الإحصائيات التوضيحية (المتوسط، الوسيط، الانحراف المعياري) للأعمدة الرقمية.
-هنعرض العلاقات باستخدام الرسومات التشتتية (scatter plots)، الرسومات الصندوقية (boxplots)، وخرائط الحرارة للارتباطات.
+- Calculate descriptive statistics (Mean, Median, Std Dev) for numerical columns.
+- Visualize relationships using scatter plots, boxplots, and correlation heatmaps.
 
 Step 3: Formulating Analysis Questions:
-بناءً على البيانات، هنحضر مجموعة من الأسئلة التحليلية اللي ممكن نجاوب عليها باستخدام البيانات.
+- Based on the data exploration, we will formulate a set of analytical questions to be answered.
 
 Let's start by exploring the data and identifying potential analysis questions. I will calculate basic statistics and
 explore the relationships visually.
