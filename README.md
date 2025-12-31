@@ -37,6 +37,12 @@ How education background influences compensation across different roles.
 3.  **Correlate Factors:** Study the relationship between education levels and performance.
 4.  **Provide Insights:** Deliver actionable recommendations for HR decision-making using Python and Power BI.
 
+## 📊 HR Analytics Dashboard
+
+The interactive Power BI dashboard provides a high-level overview of workforce metrics.
+
+![HR Analytics Dashboard](reports/figures/dashboard_screenshot.png)
+
 ## 📂 Project Structure
 
 The project follows a standard data science project structure:
