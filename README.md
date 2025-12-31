@@ -15,19 +15,19 @@ Here are some of the key findings from our exploratory data analysis:
 
 ### 1. Salary Impact on Attrition
 Analysis shows a significant difference in salary distribution between employees who left and those who stayed.
-![Salary vs Attrition](00.%20Deliverables/03.%20Week%2003%20-%20EDA/0311.%20Salary_vs_Attrition.png)
+![Salary vs Attrition](reports/figures/Salary_vs_Attrition.png)
 
 ### 2. Age Distribution & Attrition
 Understanding which age groups are most likely to leave the company helps in targeted retention strategies.
-![Age Distribution](00.%20Deliverables/03.%20Week%2003%20-%20EDA/033.%20Age_Distribution_by_Attrition.png)
+![Age Distribution](reports/figures/Age_Distribution_by_Attrition.png)
 
 ### 3. Business Travel Effect
 Does frequent travel lead to higher attrition? The data reveals interesting trends.
-![Business Travel](00.%20Deliverables/03.%20Week%2003%20-%20EDA/034.%20BusinessTravel_vs_Retention.png)
+![Business Travel](reports/figures/BusinessTravel_vs_Retention.png)
 
 ### 4. Education Field vs. Salary
 How education background influences compensation across different roles.
-![Education Field vs Salary](00.%20Deliverables/03.%20Week%2003%20-%20EDA/037.%20EducationField_vs_Salary.png)
+![Education Field vs Salary](reports/figures/EducationField_vs_Salary.png)
 
 ---
 
@@ -37,27 +37,27 @@ How education background influences compensation across different roles.
 3.  **Correlate Factors:** Study the relationship between education levels and performance.
 4.  **Provide Insights:** Deliver actionable recommendations for HR decision-making using Python and Power BI.
 
-## 📂 Project Structure & Timeline
+## 📂 Project Structure
 
-The project is organized into weekly deliverables, simulating a real-world analytics project timeline:
+The project follows a standard data science project structure:
 
-### Week 1: Build Data Model, Data Cleaning and Preprocessing
-- **Focus:** Data extraction, cleaning, and integration.
-- **Key File:** `011. Data_Cleaning.py`
-- **Output:** `Cleaned_Employee.csv`
-
-### Week 2: Analysis Questions Phase
-- **Focus:** Formulating key business questions and exploring relationships between variables.
-- **Key Activities:** Identifying trends in Age vs. Salary, Attrition factors.
-
-### Week 3: EDA & Forecasting Phase
-- **Focus:** In-depth Exploratory Data Analysis (EDA) and preparing for forecasting.
-- **Key File:** `031. Week 3 - EDA Phase.py`
-- **Visualizations:** Attrition analysis, Salary distributions, Promotion delays.
-
-### Week 4: Visualization Dashboard & Final Presentation
-- **Focus:** Creating interactive dashboards and final reporting.
-- **Deliverables:** Power BI Dashboard (`.pbix`), Final Project Report.
+```
+├── data/
+│   ├── raw/             # Original datasets (Employee.csv, etc.)
+│   ├── processed/       # Cleaned and preprocessed data
+│   └── metadata/        # Data dictionaries and project metadata
+├── src/
+│   ├── data_cleaning.py      # Script for data cleaning and preprocessing
+│   ├── analysis_questions.py # Script for answering key business questions
+│   ├── eda_analysis.py       # Exploratory Data Analysis script
+│   └── exploratory_plots.py  # Script for generating all visualizations
+├── reports/
+│   ├── figures/         # Generated plots and visualizations
+│   ├── dashboard/       # Power BI Dashboard (.pbix)
+│   └── docs/            # Project reports and documentation
+├── README.md            # Project overview and instructions
+└── requirements.txt     # Python dependencies
+```
 
 ---
 
@@ -74,13 +74,13 @@ pip install -r requirements.txt
 1.  **Data Cleaning:**
     Run the cleaning script to generate the processed dataset:
     ```bash
-    python "00. Deliverables/01. Week 01 - Build Data Model, Data Cleaning and Preprocessing/011. Data_Cleaning.py"
+    python src/data_cleaning.py
     ```
 
 2.  **Exploratory Data Analysis (EDA):**
-    Run the EDA script to generate visualizations:
+    Run the EDA script to generate visualizations in `reports/figures/`:
     ```bash
-    python "00. Deliverables/03. Week 03 - EDA/031. Week 3 - EDA Phase.py"
+    python src/eda_analysis.py
     ```
 
 ## 🧰 Tools Used

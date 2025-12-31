@@ -31,9 +31,8 @@ import os
 # Get the directory where the script is located
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Define relative path to the cleaned dataset in Week 01 folder
-# Go up 1 level to 00. Deliverables, then down to 01. Week 01...
-cleaned_data_path = os.path.join(current_dir, '..', '01. Week 01 - Build Data Model, Data Cleaning and Preprocessing', 'Cleaned_Employee.csv')
+# Define relative path to the cleaned dataset
+cleaned_data_path = os.path.join(current_dir, '..', 'data', 'processed', 'Cleaned_Employee.csv')
 
 # Load dataset
 df = pd.read_csv(cleaned_data_path)

@@ -6,7 +6,7 @@ import os
 
 # Get the directory where the script is located
 current_dir = os.path.dirname(os.path.abspath(__file__))
-dataset_path = os.path.join(current_dir, '..', '..', 'Datasets', 'HR', 'Employee.csv')
+dataset_path = os.path.join(current_dir, '..', 'data', 'processed', 'Cleaned_Employee.csv')
 
 # Load dataset
 df = pd.read_csv(dataset_path)

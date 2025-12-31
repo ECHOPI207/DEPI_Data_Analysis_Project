@@ -42,7 +42,7 @@ def main():
     plt.title("Distance from Home vs. Employee Attrition")
     plt.xlabel("Attrition")
     plt.ylabel("Distance from Home (KM)")
-    plt.savefig("Distance_from_Home_vs_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "Distance_from_Home_vs_Attrition.png"))
     plt.close()
 
     # 2. Salary Impact on Attrition
@@ -51,7 +51,7 @@ def main():
     plt.title("Salary Impact on Attrition")
     plt.xlabel("Attrition")
     plt.ylabel("Salary")
-    plt.savefig("Salary_vs_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "Salary_vs_Attrition.png"))
     plt.close()
 
     # 3. Effect of Business Travel on Employee Retention
@@ -60,7 +60,7 @@ def main():
     plt.title("Effect of Business Travel on Employee Retention")
     plt.xlabel("Business Travel")
     plt.ylabel("Count")
-    plt.savefig("BusinessTravel_vs_Retention.png")
+    plt.savefig(os.path.join(figures_dir, "BusinessTravel_vs_Retention.png"))
     plt.close()
 
     # 4. Years in Most Recent Role vs. Promotion Opportunities
@@ -70,7 +70,7 @@ def main():
     plt.title("Years in Most Recent Role vs. Promotion Opportunities")
     plt.xlabel("Years Since Last Promotion")
     plt.ylabel("Years in Most Recent Role")
-    plt.savefig("YearsInMostRecentRole_vs_Promotion.png")
+    plt.savefig(os.path.join(figures_dir, "YearsInMostRecentRole_vs_Promotion.png"))
     plt.close()
 
     # 5. Age Groups Most Likely to Leave
@@ -84,7 +84,7 @@ def main():
     plt.xlabel("Age")
     plt.ylabel("Density")
     plt.legend()
-    plt.savefig("Age_Distribution_by_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "Age_Distribution_by_Attrition.png"))
     plt.close()
 
     # 6. Gender and Attrition Rates
@@ -93,7 +93,7 @@ def main():
     plt.title("Attrition Rates by Gender")
     plt.xlabel("Gender")
     plt.ylabel("Count")
-    plt.savefig("Gender_vs_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "Gender_vs_Attrition.png"))
     plt.close()
 
     # 7. Education Field Influence on Job Roles and Salary

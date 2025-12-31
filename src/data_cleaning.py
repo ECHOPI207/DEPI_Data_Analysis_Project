@@ -5,9 +5,9 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Define relative paths
-# Go up 2 levels to reach project root: 01. Week 01 -> 00. Deliverables -> Root
-dataset_path = os.path.join(current_dir, '..', '..', 'Datasets', 'HR', 'Employee.csv')
-output_path = os.path.join(current_dir, 'Cleaned_Employee.csv')
+# Go up 1 level to reach project root from src/
+dataset_path = os.path.join(current_dir, '..', 'data', 'raw', 'Employee.csv')
+output_path = os.path.join(current_dir, '..', 'data', 'processed', 'Cleaned_Employee.csv')
 
 # Load dataset
 df = pd.read_csv(dataset_path)
