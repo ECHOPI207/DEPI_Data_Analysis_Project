@@ -1,15 +1,7 @@
-# Week 3: Exploratory Data Analysis (EDA) for Forecasting Phase
+# Exploratory Data Analysis (EDA)
 # ==============================================================
 # This script performs EDA to answer key business questions and prepares the data for further
 # visualization in PowerBI and Tableau.
-#
-# The analysis includes:
-# 1. Examining the relationship between various features (e.g., DistanceFromHome (KM), Salary, BusinessTravel)
-#    and employee attrition.
-# 2. Generating and saving preliminary visualizations.
-# 3. Exporting the cleaned dataset for advanced visualizations in BI tools.
-#
-# Note: This script is intended to be run as a standalone Python file.
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,7 +17,11 @@ def main():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     
     # Define relative path to the dataset
-    dataset_path = os.path.join(current_dir, '..', '..', 'Datasets', 'HR', 'Employee.csv')
+    dataset_path = os.path.join(current_dir, '..', 'data', 'processed', 'Cleaned_Employee.csv')
+    figures_dir = os.path.join(current_dir, '..', 'reports', 'figures')
+    
+    # Create figures directory if it doesn't exist
+    os.makedirs(figures_dir, exist_ok=True)
 
     # Load the cleaned dataset
     df = pd.read_csv(dataset_path)
@@ -103,7 +99,7 @@ def main():
     plt.xlabel("Education Field")
     plt.xticks(rotation=45)
     plt.ylabel("Salary")
-    plt.savefig("EducationField_vs_Salary.png")
+    plt.savefig(os.path.join(figures_dir, "EducationField_vs_Salary.png"))
     plt.close()
 
     # 8. Years with Current Manager and Attrition
@@ -112,7 +108,7 @@ def main():
     plt.title("Years with Current Manager vs. Attrition")
     plt.xlabel("Attrition")
     plt.ylabel("Years with Current Manager")
-    plt.savefig("YearsWithCurrManager_vs_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "YearsWithCurrManager_vs_Attrition.png"))
     plt.close()
 
     # 9. Stock Option Levels and Employee Retention
@@ -121,7 +117,7 @@ def main():
     plt.title("Stock Option Levels vs. Employee Retention")
     plt.xlabel("Stock Option Level")
     plt.ylabel("Count")
-    plt.savefig("StockOptionLevel_vs_Retention.png")
+    plt.savefig(os.path.join(figures_dir, "StockOptionLevel_vs_Retention.png"))
     plt.close()
 
     # 10. Relationship Between Education and Years in Current Job Role
@@ -130,7 +126,7 @@ def main():
     plt.title("Education Level vs. Years in Most Recent Role")
     plt.xlabel("Education Level")
     plt.ylabel("Years in Most Recent Role")
-    plt.savefig("Education_vs_YearsInMostRecentRole.png")
+    plt.savefig(os.path.join(figures_dir, "Education_vs_YearsInMostRecentRole.png"))
     plt.close()
 
     # 11. Marital Status and Attrition
@@ -139,7 +135,7 @@ def main():
     plt.title("Marital Status vs. Attrition")
     plt.xlabel("Marital Status")
     plt.ylabel("Count")
-    plt.savefig("MaritalStatus_vs_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "MaritalStatus_vs_Attrition.png"))
     plt.close()
 
     # 12. Promotion Delay and its Effect on Attrition
@@ -148,13 +144,8 @@ def main():
     plt.title("Delay in Promotion vs. Attrition")
     plt.xlabel("Attrition")
     plt.ylabel("Years Since Last Promotion")
-    plt.savefig("PromotionDelay_vs_Attrition.png")
+    plt.savefig(os.path.join(figures_dir, "PromotionDelay_vs_Attrition.png"))
     plt.close()
-
-    # Export the cleaned dataset for visualization in PowerBI and Tableau
-    export_path = "Cleaned_Employee_For_Visualization.csv"
-    df.to_csv(export_path, index=False)
-    print(f"Cleaned data exported to {export_path}")
 
 
 if __name__ == "__main__":

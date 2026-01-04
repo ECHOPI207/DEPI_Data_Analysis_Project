@@ -67,9 +67,7 @@ The project follows a standard data science project structure:
 │   └── metadata/        # Data dictionaries and project metadata
 ├── src/
 │   ├── data_cleaning.py      # Script for data cleaning and preprocessing
-│   ├── analysis_questions.py # Script for answering key business questions
-│   ├── eda_analysis.py       # Exploratory Data Analysis script
-│   └── exploratory_plots.py  # Script for generating all visualizations
+│   └── eda_analysis.py       # Exploratory Data Analysis script
 ├── reports/
 │   ├── figures/         # Generated plots and visualizations
 │   ├── dashboard/       # Power BI Dashboard (.pbix)
